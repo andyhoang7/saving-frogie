@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Best Game Ever!</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Best Game Ever!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body cz-shortcut-listen="true">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <h1 class="text-center text-danger font-weight-bold py-3">SAVING FROGIE</h1>
+        <div class="intro">
+          <p>"Help me!, I'm lost somewhere and I need to get home, but there are many scary snakes lurking around.
+            Please help me get home safely."</p>
+          <li>You can tell me where to move with your arrow buttons</li>
+          <li>Beware that those snakes >will move quicker as you pass a level</li>
+          <li>You only have 10 attempts and 60s to help Frogie get home</li>
+          <li>Try to <span id="highlight">eat those grasshopper</span> (only appears once per level) as you go to increase your remainging attempt</li>
+          <li>Frogie will get home safely when you <span id="highlight">pass level 10</span></li>
+          <br>
+        </div>
+        <div class="gameinfo">
+          <li>Seconds Remaining: &nbsp <span id="remainingtime"></span></li>
+          <li>Remaining attempts: &nbsp<span id="remainingattempt"></span></li>
+          <li>Level: &nbsp <span id="level"></span></li>
+          <br>
+        </div>
+
+      </div>
+      <div class="col-lg-8 col-12">
+        <canvas id="canvas" width="800" height="600"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="justify-content:center">
+        <button id="startgame" onclick="startgame()">Click me to start game</button>
+        <button id="resetgame" onclick="resetgame()">Reset game</button>
+      </div>
+    </div>
     <script src="game.js"></script>
-  </body>
+</body>
+
+
+
+
+
 </html>

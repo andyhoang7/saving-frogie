@@ -1,0 +1,21 @@
+
+/* .canvasgame{
+display:flex;
+justify-content:center;
+align-items:center;
+
+} */
+.gameinfo{
+    font-size: 1.1em;
+}
+.intro{
+    font-size:1em;
+
+}
+#remainingtime, #remainingattempt, #level {
+    color:blue;
+}
+
+#highlight {
+    color:red;
+}
