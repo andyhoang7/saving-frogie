@@ -548,7 +548,7 @@ if ( tries === 10 || SECONDS_PER_ROUND - elapsedTime <= 0 ){
   ctx.fillRect(50, 50, canvas.width-100, canvas.height-100);
   ctx.fillStyle = "black";
   
-  ctx.fillText('YOU NOOB! Frogie got eaten!', canvas.width/2 , canvas.height/2);
+  ctx.fillText('YOU NOOB! Froggie got eaten!', canvas.width/2 , canvas.height/2);
   ctx.fillText('Hit reset button to try again', canvas.width/2 , canvas.height/2 +50);
   ctx.fillStyle = "orange";
   ctx.font = "10pt Courier";
