@@ -28,3 +28,4 @@ Github: https://github.com/kyakaze/saving-frogie
 
 ## Features to be implemented
 - [ ] A column on the right side to show records (previous scores, best score...)
+- [ ] The user can enter (choose) st
