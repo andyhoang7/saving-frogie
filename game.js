@@ -21,7 +21,7 @@ let bgReady, heroReady, monsterReady, monster1Ready, monster2Ready, monster3Read
 let bgImage, heroImage, monsterImage, monster1Image, monster2Image, monster3Image, monster4Image, monster5Image, monster6Image, monster7Image, rewardImage;
 
 let startTime = Date.now();
-const SECONDS_PER_ROUND = 60;
+const SECONDS_PER_ROUND = 6000;
 let elapsedTime = 0;
 
 
@@ -337,6 +337,7 @@ let update = function () {
     monsterX = 0
     monsterDirectionX = 1;
   }
+
   monster1X += monster1speed * monster1DirectionX;
   monster1Y = monster1Y;
   if (
@@ -350,6 +351,7 @@ let update = function () {
     monster1X = 0
     monster1DirectionX = 1;
   }
+  
   monster2X += monster2speed * monster2DirectionX;
   monster2Y = monster2Y;
   if (
